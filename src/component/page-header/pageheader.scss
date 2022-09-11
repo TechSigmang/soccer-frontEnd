@@ -1,0 +1,22 @@
+.pageheader{
+    max-width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../../images/slider/ab3.jpeg");
+    opacity: .8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+    .page-title{
+        font-size: 40px;
+        position: absolute;
+        color: azure;
+
+    }
+}
