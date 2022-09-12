@@ -8,7 +8,7 @@ const Signup = () => {
   <Topbar />
   <Navbar />
   <div className="login">
-    Signup goes here
+    Signup form goes hereg
   </div>
   <Footer />
   </>;
