@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    background-image: url("../../images/slider/ab3.jpeg");
+    flex-direction: column;
+  
+    background-image: url("../../images/bg/1.jpg");
     opacity: .8;
     background-position: center;
     background-size: cover;
@@ -15,8 +16,23 @@
 
     .page-title{
         font-size: 40px;
-        position: absolute;
+        // position: absolute;
         color: azure;
+        margin-top: 0px;
 
+    }
+
+    .line{
+        width: 5%;
+        border: 2px solid #fff;
+        background-color: #fff;
+   
+        margin-bottom: 20px;
+    }
+    
+    p{
+        color: rgb(235, 231, 231);
+        font-size: 14px;
+       
     }
 }
