@@ -1,3 +1,4 @@
+import {Link } from 'react-router-dom'
 import  './login.scss'
 import { FaFacebook, FaTwitter, FaGoogle, FaApple} from 'react-icons/fa'
 import Footer from '../../../component/footer/Footer'
@@ -30,8 +31,8 @@ const Login = () => {
       </div>
 
 
-
-      <button> Login </button>
+      <Link to={'/auth/dashboard'}> <button> Login </button></Link>
+      
 
 <div className="alternative">OR</div>
 <hr />

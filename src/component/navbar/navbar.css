@@ -1,0 +1,219 @@
+:root{
+    --textColor: #009995;
+}
+header{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--textColor);
+    padding: 0 2rem;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo img{
+ 
+        width: 200px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+nav ul{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color:  var(--textColor);
+    line-height: 80px;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    border-bottom: 5px solid var(--textColor);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: .3s;
+    transform: translateY(100px);
+}
+
+.nav-btn{
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--textColor);
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid var(--textColor);
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-close-btn{
+    border: 1px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.nav-btn:hover{
+    background-color: var(--textColor);
+    color: #fff;
+}
+
+/* Search Area */
+.search-area{
+    
+    border: 1px solid var(--textColor);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.search-area input{
+       
+        width: 80%;
+        border: 0px solid transparent;
+        outline: none;
+        padding: 10px;
+    }
+
+    .search-area button{
+       padding: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border: 0px solid transparent;
+       font-size: 20px;
+       background-color: var(--textColor);
+       color: #fff;
+
+      
+    }
+
+    .search-area button:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+    /* End serarch area */
+
+    /* Action buttons */
+    .action{
+        display: flex;
+        justify-content: space-between;
+    }
+       .action  .btnLink{
+            padding: 10px;
+            margin-right: 10px;
+            background-color:  var(--textColor);
+            font-weight: 700;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 15px;
+            outline: none;
+            border: 0px solid transparent;
+            text-decoration: none;
+
+        }
+
+        .action .btnLink:hover{
+            cursor: pointer;
+            opacity: .8;
+        }
+    
+    /* End action buttons */
+
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+   
+    .logo img{
+ 
+        width: 140px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+}
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-template: 20px;
+        background-color: var(--textColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+        color: #fff;
+        z-index: 1;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        gap: 0px;
+    }
+    nav ul li a{
+        
+        color: #fff;
+      
+    }
+    
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    .action  .btnLink{
+       
+        background-color: #fff;
+      
+        color: var(--textColor);
+        
+
+    }
+
+    .search-area button{
+       
+        background-color: #fff;
+        color: var(--textColor);
+ 
+       
+     }
+}
+

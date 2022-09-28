@@ -1,42 +1,45 @@
-import { FaSearch, FaUserAlt, FaLockOpen } from "react-icons/fa";
+import { useRef } from "react";
+import { FaSearch, FaUserAlt, FaLockOpen, FaTimes, FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom'
-import "./navbar.scss";
-import logo from "../../images/logo/main-logo.svg";
+import "./navbar.css";
+import logo from "../../images/logo/logo.png";
 
 const Navbar = () => {
+  const navRef = useRef()
+
+  const toggleNav = () =>{
+    navRef.current.classList.toggle("responsive_nav")
+  }
   return (
-    <div className="navbar">
+    <header>
       <div className="logo">
-        <Link  to={`/`}>
+         <Link  to={`/`}>
         <img src={logo} alt="Logo" />
         </Link>
-        
       </div>
-
-      <div className="menu-wrapper">
-          <div className="menus">
-                <nav>
-                  <ul>
+      <nav ref={navRef}>
+          <ul>
                     <li><Link to={`/`}>Home</Link> </li>
                     <li><Link to={`/course`}>Courses</Link></li>
                     <li><Link to={`/price`}>Prices</Link></li>
                     <li><Link to={`/about`}>About Us</Link></li>
                     <li><Link to={`/contact`}>Contact Us</Link></li>
-                  </ul>
-                </nav>
-          </div>
-          <div className="search-area">
-            <input type="text" placeholder="Search something.." />
-            <button>
-              <FaSearch />
-            </button>
+            </ul>
+            <div className="search-area">
+                <input type="text" placeholder="Search something.." />
+                <button>
+                  <FaSearch />
+                </button>
           </div>
           <div className="action">
-            <Link to={`/auth/signup`} className="btnLink"><FaUserAlt/> Sign Up</Link>
-            <Link to={`/auth`} className="btnLink"> <FaLockOpen/> Login</Link>
+              <Link to={`/auth/signup`} className="btnLink"><FaUserAlt/> Sign Up</Link>
+              <Link to={`/auth`} className="btnLink"> <FaLockOpen/> Login</Link>
           </div>
-      </div>
-    </div>
+
+            <button className="nav-btn nav-close-btn" onClick={toggleNav}><FaTimes /> </button>
+      </nav>
+      <button className="nav-btn" onClick={toggleNav}><FaBars /> </button>
+    </header>
   );
 };
 

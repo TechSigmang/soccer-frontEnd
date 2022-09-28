@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import "./signup.scss";
 import { FaFacebook, FaTwitter, FaGoogle, FaApple } from "react-icons/fa";
 import Footer from "../../../component/footer/Footer";
@@ -5,8 +6,11 @@ import Navbar from "../../../component/navbar/Navbar";
 import Topbar from "../../../component/topbar/Topbar";
 import Pageheader from "../../../component/page-header/Pageheader";
 import signup from "../../../images/auth/signup.jpg";
+import UserContext from "../../../context/UserContext";
 
 const Signup = () => {
+  const { user } = useContext(UserContext)
+  console.log(user);
   return (
     <>
       <Topbar />

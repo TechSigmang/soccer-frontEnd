@@ -1,4 +1,4 @@
-import React from './courses.scss'
+import  './courses.scss'
 
 const CourseComponent = ({ children}) => {
   return (

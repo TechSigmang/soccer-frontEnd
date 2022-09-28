@@ -1,6 +1,6 @@
 import { FaPhoneAlt, FaMapMarkedAlt, FaEnvelope, FaFacebook, FaInstagram, FaGooglePlus, FaTwitter, FaCcMastercard, FaCcAmex, FaCcVisa, FaCcPaypal, FaCcApplePay, FaCcAmazonPay, FaGooglePay } from "react-icons/fa";
 import "./footer.scss";
-import logo from "../../images/logo/main-logo.svg";
+import logo from "../../images/logo/logo.png";
 
 const Footer = () => {
   return (

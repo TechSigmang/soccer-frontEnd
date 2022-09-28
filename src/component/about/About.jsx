@@ -1,6 +1,6 @@
 import { FaChevronRight, FaRegArrowAltCircleRight} from 'react-icons/fa'
 import './about.scss'
-import about from "../../images/slider/ab3.jpeg"
+import about from "../../images/course/course-1.png"
 
 const About = () => {
   return (
