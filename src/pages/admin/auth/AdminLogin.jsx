@@ -34,6 +34,9 @@ const AdminLogin = () => {
         </div>
 
         </div>
+        <div className="copyright">
+          <p>&copy; 2022, Trainer Tactics, All Right Reserved</p>
+        </div>
     </div>
   )
 }

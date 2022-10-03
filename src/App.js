@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -24,7 +24,7 @@ import Price from './pages/price/Price';
 const App = () => {
   return (
     <UserProfider>
-     <BrowserRouter>
+     <Router>
           <Routes>
             <Route path="/">
               <Route index element={<Home />} />
@@ -57,7 +57,7 @@ const App = () => {
             
             </Route>
           </Routes>
-  </BrowserRouter>
+  </Router>
   </UserProfider>
   )
 }
